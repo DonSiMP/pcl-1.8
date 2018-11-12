@@ -1,0 +1,5 @@
+pcl-dev (0.9-0ubuntu0) xenial; urgency=medium
+
+  * Adding headers, adding libproj, install script done, changing rules to j8 and dh-clean, make j4 again, added quilt, added native
+
+ -- Madhu Soodhan (Madhu) <madhusoodhans1412@gmail.com>  Tue, 01 Nov 2011 20:32:17 +0100

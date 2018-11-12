@@ -1,0 +1,49 @@
+Source: pcl-dev
+Maintainer: Vishnu Kumar <vishnukumarmdu@gmail.com>
+Section: libs
+Priority: extra
+Build-Depends: debhelper (>= 9), dh-exec (>=0.3),
+        cmake,
+        libboost-system-dev,
+        libboost-filesystem-dev,
+        libboost-thread-dev, 
+        libboost-date-time-dev,
+        libboost-iostreams-dev,
+        libeigen3-dev,
+        libflann-dev,
+        libqhull-dev,
+ 	libvtk6-dev,
+ 	libproj-dev,
+        libopenni-dev [!s390x !alpha !hppa !hurd-i386 !kfreebsd-any !m68k !sh4 !sparc64],
+        libusb-1.0-0-dev,
+        freeglut3-dev, 
+        libxmu-dev,
+        libxi-dev,
+        libpython2.7-dev
+Standards-Version: 3.9.8
+#Vcs-Browser: https://anonscm.debian.org/cgit/debian-science/packages/pcl.git
+#Vcs-Git: https://anonscm.debian.org/cgit/debian-science/packages/pcl.git
+#Homepage: http://www.pointclouds.org/
+
+Package: pcl-dev
+Architecture: any
+Section: libdevel
+Depends: libboost-all-dev,
+	 libeigen3-dev,
+	 libflann-dev,
+	 libvtk6-dev,
+	 libqhull-dev,
+	 libopenni-dev [!s390x !alpha !hppa !hurd-i386 !kfreebsd-any !m68k !sh4 !sparc64],
+	 ${misc:Depends}
+Suggests: libpcl-doc
+Description: Point Cloud Library - development files
+ The Point Cloud Library (PCL) is a standalone, large scale, open
+ project for 2D/3D image and point cloud processing.
+ .
+ The PCL framework contains numerous state-of-the art algorithms
+ including filtering, feature estimation, surface reconstruction,
+ registration, model fitting and segmentation.
+ .
+ This package contains development files (headers and shared library
+ symbolic link).
+
